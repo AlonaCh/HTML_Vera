@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(244, 224, 227);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: coral;
+}
+a:hover{
+color: black;
+}
+
+#container {
+    margin: 50px auto;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.form-wrap {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.form-wrap h1,
+.form-wrap p {
+    margin-bottom: 20px;
+
+}
+.form-group {
+    margin: 20px 0;
+}
+.form-group lable {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: grey;
+    text-align: left;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(205, 197, 197);
+}
+.form-wrap button {
+    width: 80%;
+    background: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.form-wrap .bottom-text {
+    font-size: 12px;
+}
+footer {
+    margin: 10px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.form-wrap .bottom-text a:hover {
+    text-decoration: underline;
+}
+footer a:hover {
+    color: white;
+    font-weight: bold;
+
+}
+.form-wrap button:hover {
+    background: chocolate;
+}

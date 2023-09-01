@@ -26,7 +26,10 @@ img {
     display: block;
    
 }
+#image1 {
+    float:left;
 
+}
 header li {
     display: inline-block;
     text-align: right;
