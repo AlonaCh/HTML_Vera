@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+
+section {
+padding: 32px;
+
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+/* Header area */
+
+header {
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+header li {
+    display: inline-block;
+}
+
+ul li a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+li:hover {
+background-color: lightpink;
+}
+
+/* Table */
+
+table {
+    border-collapse: collapse;
+}
+thead {
+    font-weight: bold;
+    background: orange;
+    color: grey;
+}
+td, th {
+    border: 1px solid white;
+    width: 200px;
+    padding: 15px;
+    text-align: left;
+}
+th {
+    border-bottom: 3px solid white;
+}
+.odd {
+    background-color: beige;
+}
+.even {
+    background-color: bisque;
+}
+
+/* Boxes*/
+
+#boxes {
+    background: url("https://source.unsplash.com/xC7Ho08RYF4") no-repeat center center/cover;
+    height: 100vh;
+}
+.box {
+    background: indigo;
+    display: inline-block;
+    margin: 32px;
+    height: 200px;
+    width: 200px;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    background: burlywood;
+    margin-bottom: 10px;
+}
+.box2 {
+    border: 7px double wheat;
+    border-width: 5px;
+    border-radius: 6px;
+    border-color: blue red yellow pink;
+}
+.box4 {
+border-style: dashed;
+}
+.box1 {
+    border-style: groove;
+    border-width: 10px;
+    border-top-style: dotted;
+    margin: 30px;
+}
