@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header h1 {
     text-align: center;
     margin-top: 90px;
@@ -16,19 +17,29 @@ header {
 background-attachment: fixed;
 };
 
+
 body {
     background-color: azure;
+    height: 100%;
 }
-
-img {
+#image1,
+#image2,
+#image3 {
+    
     width: 10%;
     height: auto;
     display: block;
-   
+
 }
 #image1 {
     float:left;
-
+    margin-right: 1rem;
+}
+#image2 {
+    float:right;
+}
+#image3 {
+    float:left;
 }
 header li {
     display: inline-block;
@@ -42,4 +53,18 @@ ul li a {
 }
 li:hover {
     background-color: lightpink;
+    }
+    .projects1 {
+        width: 30%;
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    .experiense1{
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    p {
+        width: 100px;
+        
     }
