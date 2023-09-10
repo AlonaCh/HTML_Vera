@@ -1,0 +1,40 @@
+body {
+    background: chocolate;
+}
+
+section {
+    min-height: 25vh;
+}
+#something1 {
+    background-color: green;
+}
+.cards{
+    display: flex;
+}
+.card {
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 33%;
+}
+ .card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+.card button {
+    margin-bottom: 20px;
+}
+@media (max-width: 450px) {
+    #something2{
+        background: black;
+    }
+
+.cards {
+    flex-direction: column;
+}
+.card {
+width: 100%;
+margin: 20px auto;
+}
+}
