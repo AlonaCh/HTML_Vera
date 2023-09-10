@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    display: flex;
+    padding: 1rem;
+}
+
+.site-title {
+    flex: 3;
+    background-color: yellow;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    flex: 2;
+    background: pink;
+
+}
