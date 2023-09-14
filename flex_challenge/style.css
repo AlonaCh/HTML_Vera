@@ -11,7 +11,6 @@ header {
     display: flex;
     padding: 1rem;
 }
-
 .site-title {
     flex: 3;
     background-color: yellow;
@@ -19,7 +18,40 @@ header {
 ul {
     display: flex;
     list-style-type: none;
-    flex: 2;
+    flex: 1;
     background: pink;
-
+    padding: 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
 }
+main {
+    display: flex;
+    height: 100vh;
+}
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    }
+    .side-bar {
+        background: orange;
+        padding: 7rem;
+        margin: 0.5rem;
+    }
+    .ads {
+        background: green; 
+        padding: 7rem;
+        
+    }
+    .other-stuff{
+        background: pink;
+        padding: 7rem;
+        margin: 0.5rem;
+    }
+    section {
+        flex: 4;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
