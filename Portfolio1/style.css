@@ -14,45 +14,59 @@ header {
   height: 300px;
 background-attachment: fixed;
 }
-
 header h1 {
-    text-align: center;
     margin-top: 90px;
     text-shadow: grey 0 0 3px;
+    }
+    .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    position: static;
     }
 .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
+        padding: 10px;
+        margin: 10px;
+       
 }
 .contentwrap {
     display: flex;
+
     padding: 20px;
-    width: 80%;
-}
+    }
+
 .containerProjects {
     display: flex;
     background: white;
+    
 }
 #projects {
     text-align: center; 
 }
 .containerExperience {
     display: flex;
-    flex: 1;
+   
     background: pink;
 }
 .containerSkills {
     display: flex;
-    flex: 1;
 }
-
+.img{
+    display: flex;  
+    width: calc(100% / 3);
+    object-fit: cover;
+  
+}
 
 #image1,
 #image2,
 #image3 {
-    width: 20%;
+    width: 50%;
    margin: 10px;
 }
 
@@ -64,10 +78,11 @@ ul li a {
     
     text-decoration: none;
     padding: 20px;
-
 }
 li:hover {
     background-color: lightpink;
     }
-    
+   footer {
+    text-align: center;
+   } 
     
