@@ -27,8 +27,32 @@
     </header>
     <main class="container">
       <section class="hero-banner"></section>
+      <div class="projectCards">
+        <div class="card">
+          <img src="imgProject1.jpg" alt="project" class="imgProject" />
+          <div class="cardText">
+            <h4>Some project</h4>
+            <p>HTML, CSS, JS</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imgProject2.jpg" alt="project" class="imgProject" />
+          <div class="cardText">
+            <h4>Some project</h4>
+            <p>HTML, CSS, JS</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imgProject3.jpg" alt="project" class="imgProject" />
+          <div class="cardText">
+            <h4>Some project</h4>
+            <p>HTML, CSS, JS</p>
+          </div>
+        </div>
+      </div>
+
       <section class="containerProjects">
-        <h3 id="projects" class="projects1">Projects</h3>
+        <h3 id="projects" class="project1">Projects</h3>
         <div class="contentwrap">
           <p>
             After building anticipation in Britain with some well-received live
@@ -36,6 +60,7 @@
             album, 19, in 2008. (The title referred to the age at which she
             penned most of the tracks.)
           </p>
+
           <div class="img">
             <img id="image1" src="portfolioPhoto3.jpg" alt="Projects" />
           </div>
@@ -43,11 +68,11 @@
       </section>
 
       <section class="containerExperience">
-        <h3 id="experiense">Experience</h3>
-        <div class="img">
-          <img id="image2" src="portfolioPhoto.jpg" alt="Photo" />
-        </div>
-        <div class="contentwrap">
+        <h3 id="experiense" class="experiense1">Experience</h3>
+        <div class="contentwrapExp">
+          <div class="img">
+            <img id="image2" src="portfolioPhoto.jpg" alt="Photo" />
+          </div>
           <p>
             After building anticipation in Britain with some well-received live
             performances, Adele (as she now billed herself) released her first
@@ -57,7 +82,7 @@
         </div>
       </section>
       <section class="containerSkills">
-        <h3 id="skills">Skills</h3>
+        <h3 id="skills" class="skills1">Skills</h3>
         <div class="contentwrap">
           <p>
             After building anticipation in Britain with some well-received live
@@ -65,11 +90,27 @@
             album, 19, in 2008. (The title referred to the age at which she
             penned most of the tracks.)
           </p>
-        </div>
-        <div class="img">
-          <img id="image3" src="portfolioPhoto2.jpg" alt="Coding" />
+          <div class="img">
+            <img id="image3" src="portfolioPhoto2.jpg" alt="Coding" />
+          </div>
         </div>
       </section>
+      <form>
+        <div class="form-group">
+          <lable for="firstname">Your name</lable>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            class="nameInput"
+          />
+        </div>
+        <div class="form-group">
+          <lable for="email">Email</lable>
+          <input type="email" name="email" id="email" class="emailInput" />
+        </div>
+        <button type="submit" class="contactMe">Contact me</button>
+      </form>
       <footer>Copyright My website 2023</footer>
     </main>
   </body>
