@@ -14,10 +14,24 @@ body {
     body{
         background: black;
     }
+    #backToTop {
+        bottom: 1rem;
+        right: 1rem;
+                }
+                .btnBack {
+                    padding: 0.5rem;
+                }
     }
     @media only screen and (max-width: 1180px) {
         body{
             background: yellow;
+        }
+        #backToTop {
+bottom: 1rem;
+right: 1rem;
+        }
+        .btnBack {
+            padding: 0.5rem;
         }
         }
 header {
@@ -170,4 +184,19 @@ lable {
    footer {
     text-align: center;
    } 
+   .btnBack {
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    background-color: #9F86C0;
+    font-family: inherit;
+    font-size: inherit;
+   }
+   #backToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+   }
     
