@@ -36,6 +36,5 @@ if (navMenu.classList.contains('responsive')) {
 }
 }
 
-
 backButton.addEventListener('click', getToTop);
 mobileButton.addEventListener('click', mobileMenu);

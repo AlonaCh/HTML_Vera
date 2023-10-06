@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-smoothing: grayscale;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      header li {
+        display: inline-block;
+        text-align: right;
+      }
+      ul li a {
+        text-decoration: none;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="heading">
+      <nav>
+        <ul class="liContainer">
+          <li class="menu"><a href="#aboutme">About me</a></li>
+          <li class="menu"><a href="#skills">Skills</a></li>
+          <li class="menu"><a href="#projects">Projects</a></li>
+          <li class="menu"><a href="#gallery">Gallery</a></li>
+          <li class="menu"><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form id="contact">
+      <div class="form-group">
+        <lable for="firstname">Your name</lable>
+        <input type="text" name="firstname" id="firstname" class="nameInput" />
+      </div>
+      <div class="form-group">
+        <lable for="email">Email</lable>
+        <input type="email" name="email" id="email" class="emailInput" />
+      </div>
+      <button type="submit" class="contactMe">Contact me</button>
+    </form>
+    <footer>
+      <button class="btnBack" id="backToTop">Back to top</button>
+      <small>Copyright©️ My website 2023</small>
+    </footer>
+  </body>
+</html>
