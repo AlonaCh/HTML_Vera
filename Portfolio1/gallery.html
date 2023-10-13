@@ -22,6 +22,105 @@
       ul li a {
         text-decoration: none;
         padding: 20px;
+        color: #434059;
+      }
+      ul li a:hover {
+  color: pink;
+}
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+      }
+      .grid-container {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 8vw);
+        grid-gap: 0.7rem;
+        margin: 2rem auto;
+      }
+      .imgProject {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      .first {
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 4;
+      }
+      .second {
+        background: orange;
+        grid-row: 1 / span 2;
+        grid-column: 5 / span 1;
+      }
+      .third {
+        background: green;
+        grid-row: 3 / span 4;
+        grid-column: 1 / span 1;
+      }
+      .fifth {
+        background: lightgreen;
+        grid-row: 3 / span 2;
+        grid-column: 5 / span 1;
+      }
+      .sixth {
+        background: yellow;
+        grid-row: 3 / span 4;
+        grid-column: 2 / span 3;
+      }
+      .seventh {
+        background: purple;
+        grid-row: 5 / span 2;
+        grid-column: 5 / span 1;
+      }
+      .eighth {
+        background: burlywood;
+        grid-column: 1 / span 3;
+        grid-row: 7 / span 2;
+      }
+      .ninth {
+        grid-column: 4 / span 2;
+        grid-row: 7 / span 2;
+      }
+      form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(71, 70, 70);
+  color: white;
+  padding: 30px;
+}
+.form-group {
+  display: flex;
+  min-width: 20%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+      .nameInput,
+.emailInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+lable {
+  margin-right: 10px;
+}
+.contactMe {
+  padding: 10px;
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
+}
+      small {
+        margin-top: 15px;
+        margin-bottom: 5px;
       }
     </style>
   </head>
@@ -29,14 +128,46 @@
     <header class="heading">
       <nav>
         <ul class="liContainer">
-          <li class="menu"><a href="#aboutme">About me</a></li>
-          <li class="menu"><a href="#skills">Skills</a></li>
-          <li class="menu"><a href="#projects">Projects</a></li>
-          <li class="menu"><a href="#gallery">Gallery</a></li>
-          <li class="menu"><a href="#contact">Contact me</a></li>
+          <li class="menu"><a href="index.html">Home</a></li>
+          <li class="menu"><a href="index.html">About me</a></li>
+          <li class="menu"><a href="index.html">Skills</a></li>
+          <li class="menu"><a href="index.html">Projects</a></li>
+          <li class="menu"><a href="index.html">Gallery</a></li>
+          <li class="menu"><a href="index.html">Contact me</a></li>
         </ul>
       </nav>
     </header>
+    <main>
+      <div class="container">
+      <div class="grid-container">
+        <div class="image first">
+          <img src="imgProject1.jpg" alt="project" class="imgProject" />
+        </div>
+        <div class="image second">
+          <img src="imgProject2.jpg" alt="project" class="imgProject" />
+        </div>
+        <div class="image third">
+          <img src="imgProject3.jpg" alt="project" class="imgProject" />
+        </div>
+
+        <div class="image fifth">
+          <img src="portfolioPhoto.jpg" alt="project" class="imgProject" />
+        </div>
+        <div class="image sixth">
+          <img src="portfolioPhoto2.jpg" alt="project" class="imgProject" />
+        </div>
+        <div class="image seventh">
+          <img src="portfolioPhoto3.jpg" alt="project" class="imgProject" />
+        </div>
+        <div class="image eighth">
+          <img src="imgProject1.jpg" alt="project" class="imgProject" />
+        </div>
+        <div class="image ninth">
+          <img src="imgProject1.jpg" alt="project" class="imgProject" />
+        </div>
+      </div>
+    </main>
+    <footer>
     <form id="contact">
       <div class="form-group">
         <lable for="firstname">Your name</lable>
@@ -47,10 +178,9 @@
         <input type="email" name="email" id="email" class="emailInput" />
       </div>
       <button type="submit" class="contactMe">Contact me</button>
-    </form>
-    <footer>
-      <button class="btnBack" id="backToTop">Back to top</button>
       <small>Copyright©️ My website 2023</small>
+    </form>
     </footer>
+  </div>
   </body>
 </html>
