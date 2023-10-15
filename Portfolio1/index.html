@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa&family=Dosis:wght@300&family=Frank+Ruhl+Libre:wght@300&family=Lato:ital,wght@0,300;1,400&family=PT+Mono&family=Playfair+Display&family=Poppins:wght@200&family=Roboto+Condensed:wght@300&family=Tourney:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Welcome to my Portfolio</title>
   </head>
@@ -28,50 +27,49 @@
           <li class="menu"><a href="#contact">Contact me</a></li>
         </ul>
       </nav>
-      <section class="hero">
+      <div class="hero">
         <div class="hero-image">
           <div class="hero-text">
             <h1>I'm Alona Chubenko</h1>
             <h2 class="logo">This is my portfolio</h2>
-            <p>WEB</p>
-          </div>
-        </div>
-      </section>
-    </header>
-    <main class="container">
-      <h3>Projects</h3>
-      <div id="projects" class="projectCards">
-        <div class="card">
-          <img src="imgProject1.jpg" alt="project" class="imgProject" />
-          <div class="cardText">
-            <h4>Some project</h4>
-            <p>HTML, CSS, JS</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgProject2.jpg" alt="project" class="imgProject" />
-          <div class="cardText">
-            <h4>Some project</h4>
-            <p>HTML, CSS, JS</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgProject3.jpg" alt="project" class="imgProject" />
-          <div class="cardText">
-            <h4>Some project</h4>
-            <p>HTML, CSS, JS</p>
+            <p>WEB development</p>
           </div>
         </div>
       </div>
-
+    </header>
+    <main class="container">
       <section class="containerProjects">
-        <h3 id="aboutme" class="experiense1">About me</h3>
+        <h3>Take a look at my projects!</h3>
+        <div id="projects" class="projectCards">
+          <div class="card one">
+            <img src="imgProject1.jpg" alt="project" class="imgProject" />
+            <div class="cardText">
+              <h4>Some project</h4>
+              <p>HTML, CSS, JS</p>
+            </div>
+          </div>
+          <div class="card two">
+            <img src="imgProject2.jpg" alt="project" class="imgProject" />
+            <div class="cardText">
+              <h4>Some project</h4>
+              <p>HTML, CSS, JS</p>
+            </div>
+          </div>
+          <div class="card three">
+            <img src="imgProject3.jpg" alt="project" class="imgProject" />
+            <div class="cardText">
+              <h4>Some project</h4>
+              <p>HTML, CSS, JS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="containerAbout">
+        <h3 id="aboutme" class="aboutme1">About me</h3>
         <div class="contentwrap">
           <p>
-            After building anticipation in Britain with some well-received live
-            performances, Adele (as she now billed herself) released her first
-            album, 19, in 2008. (The title referred to the age at which she
-            penned most of the tracks.)
+            I’m currently studying Full Stack Web Development at Business College in Helsinki and seeking new opportunities in front-end development. I’m open to work remotely and have flexible hours. I’m skilled in HTML, CSS and JavaScript.
           </p>
 
           <div class="img">
@@ -81,18 +79,33 @@
       </section>
 
       <section class="containerSkills">
-        <h3 id="skills" class="skills1">Skills</h3>
-        <div class="contentwrap">
-          <p>
-            After building anticipation in Britain with some well-received live
-            performances, Adele (as she now billed herself) released her first
-            album, 19, in 2008. (The title referred to the age at which she
-            penned most of the tracks.)
-          </p>
-          <div class="img">
-            <img id="image3" src="portfolioPhoto2.jpg" alt="Coding" />
+      
+
+        <div id="projects" class="projectCards">
+          <div class="card one">
+            <img src="imgProject1.jpg" alt="project" class="imgProject" />
+            <div class="cardText">
+              <h4>Some project</h4>
+              <p>HTML, CSS, JS</p>
+            </div>
           </div>
-        </div>
+          <div class="card two">
+            <img src="imgProject2.jpg" alt="project" class="imgProject" />
+            <div class="cardText">
+              <h4>Some project</h4>
+              <p>HTML, CSS, JS</p>
+            </div>
+          </div>
+          <div class="card three">
+            <img src="imgProject3.jpg" alt="project" class="imgProject" />
+            <div class="cardText">
+              <h4>Some project</h4>
+              <p>HTML, CSS, JS</p>
+            </div>
+          </div>
+
+
+
       </section>
       <form id="contact">
         <div class="form-group">
@@ -109,12 +122,52 @@
           <input type="email" name="email" id="email" class="emailInput" />
         </div>
         <button type="submit" class="contactMe">Contact me</button>
+
+
+
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.github.com/patricia"
+            target="_blank"
+            title="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instragram.com/patricia"
+            target="_blank"
+            title="instragram Profile"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/patricia"
+            target="_blank"
+            title="Twitter Profile"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <p class="text-center mt-5">
+          ✌️ This website is
+          <a
+            href="https://github.com/AlonaCh/HTML_Vera/tree/main/Portfolio1"
+            target="_blank"
+          >
+            open-sourced
+          </a>
+        </p>
+      </footer>
+    </div>
+
+
+    
         <small>Copyright©️ Alona Chubenko</small>
       </form>
-      <footer>
-        <button class="btnBack" id="backToTop">Back to top</button>
-      </footer>
     </main>
+    <footer>
+      <button class="btnBack" id="backToTop">Back to top</button>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
