@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Changa&family=Dosis:wght@300&family=Frank+Ruhl+Libre:wght@300&family=Lato:ital,wght@0,300;1,400&family=PT+Mono&family=Playfair+Display&family=Poppins:wght@200&family=Roboto+Condensed:wght@300&family=Tourney:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
@@ -46,34 +47,38 @@
         <h1>Take a look at my projects!</h1>
         <div id="projects" class="projectCards">
           <div class="card one">
-            <img src="imgProject1.jpg" alt="project" class="imgProject" />
+            <img src="catchGame.jpg" alt="project" class="imgProject" />
             <div class="cardText">
-              <h4>Some project</h4>
+              <h2>Catch me Game</h2>
               <p>
                 <a
           href="https://public.bc.fi/s2301193/CatchGame/"
                 target="_blank"
-              >Catch me Game
+              >Learn more
               </a>
               </p>
             </div>
           </div>
           <div class="card two">
-            <img src="imgProject2.jpg" alt="project" class="imgProject" />
+            <img src="pokemon.jpg" alt="project" class="imgProject" />
             <div class="cardText">
-              <h4>Some project</h4>
+              <h2>PokeDex</h2>
               <p><a
-                href="https://public.bc.fi/s2301193/CatchGame/"
+                href="https://public.bc.fi/s2301193/PokeDex/"
                       target="_blank"
-                    >PokeDex
+                    >Learn more
                     </a></p>
             </div>
           </div>
           <div class="card three">
             <img src="imgProject3.jpg" alt="project" class="imgProject" />
             <div class="cardText">
-              <h4>Some project</h4>
-              <p>HTML, CSS, JS</p>
+              <h2>Weather App</h2>
+              <p><a
+                href="https://www.shecodes.io/workshops/shecodes-react-fb003b2b-b144-4e80-9443-cf79757aec31/projects/1405255"
+                      target="_blank"
+                    >Learn more
+                    </a></p>
             </div>
           </div>
         </div>
@@ -108,21 +113,26 @@
       </section>
       <!--Contact form-->
       <section class="contact">
-      <form id="contact">
-        <div class="form-group">
-          <lable for="firstname">Your name</lable>
-          <input
-            type="text"
-            name="firstname"
-            id="firstname"
-            class="nameInput"
-          />
+        <form id="contact">
+          <div class="form-group">
+            <lable for="firstname">Your name</lable>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              class="nameInput"
+            />
+          </div>
+          <div class="form-group">
+            <lable for="email">Email</lable>
+            <input type="email" name="email" id="email" class="emailInput" />
+          </div>
+
+          <div class="form-group">
+            <textarea cols="30" rows="3" placeholder="Message"></textarea>
         </div>
-        <div class="form-group">
-          <lable for="email">Email</lable>
-          <input type="email" name="email" id="email" class="emailInput" />
-        </div>
-        <button type="submit" class="contactMe">Contact me</button>
+
+          <button type="submit" class="contactMe">Contact me</button>
         <!--Social links-->
         <div class="social-links">
           <a
@@ -132,7 +142,6 @@
           <i class="fa-solid fa-envelope"></i>
             <span class="email">aliona.chubenko@gmail.com</span>
           </a>
-          
           <a
             href="https://github.com/AlonaCh"
             target="_blank"
@@ -140,7 +149,6 @@
           >
           <i class="fa-brands fa-github"></i>
           </a>
-          
           <a
             href="https://www.linkedin.com/in/alona-chubenko-66228b17b/"
             target="_blank"

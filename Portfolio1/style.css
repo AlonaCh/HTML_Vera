@@ -1,12 +1,13 @@
-/*:root {
+:root {
   --header-color: #f6f3ff;
+  --h-color: #434059;
   --body-color: #ffffff;
   --hover-link-color: #4f25b0;
   --link-color: #434059;
   --secondary-color: #f6f3ff;
   --media-color: #ffeedf;
   --skill-span-color: #827e9c;
-} */
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@ html {
 }
 body {
   min-height: 100vh; /*height 100*/
-  background-color: #ffffff;
+  background-color: var(--body-color);
   color: #434059;
   font-family: "Poppins", sans-serif;
 }
@@ -124,22 +125,28 @@ header h1 {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  border-color: #ffffff;
   margin: 1.5rem;
   background: white;
-  border: 1px rgb(187, 181, 181) ridge;
-  color: black;
+  border: solid 0.1em lightgrey;
+  color: var(--h-color);
 }
 
 .imgProject {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
 .cardText {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   padding: 12px 16px;
+}
+.cardText a {
+  text-decoration: none;
+  color: var(--hover-link-color);
 }
 .containerAbout {
   display: flex;
@@ -322,15 +329,15 @@ small {
     margin: 1rem;
   }
 }
-/*@media (max-width: 667px) {
-    body{
-        background: black;
-    }
-    #backToTop {
-        bottom: 1rem;
-        right: 1rem;
-                }
-                .btnBack {
-                    padding: 0.5rem;
-                }
-    } */
+@media (max-width: 667px) {
+  body {
+    background: black;
+  }
+  #backToTop {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .btnBack {
+    padding: 0.5rem;
+  }
+}
