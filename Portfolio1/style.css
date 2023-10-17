@@ -1,3 +1,12 @@
+/*:root {
+  --header-color: #f6f3ff;
+  --body-color: #ffffff;
+  --hover-link-color: #4f25b0;
+  --link-color: #434059;
+  --secondary-color: #f6f3ff;
+  --media-color: #ffeedf;
+  --skill-span-color: #827e9c;
+} */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +19,8 @@ html {
 }
 body {
   min-height: 100vh; /*height 100*/
-  background-color: azure;
+  background-color: #ffffff;
+  color: #434059;
   font-family: "Poppins", sans-serif;
 }
 .top {
@@ -39,6 +49,7 @@ body {
 }
 header li {
   display: inline-block;
+  font-size: 18px;
 }
 .liContainer {
   text-align: right;
@@ -50,11 +61,12 @@ ul li a {
   color: #434059;
 }
 ul li a:hover {
-  color: pink;
+  color: #4f25b0;
+  font-weight: bold;
 }
 
 header {
-  background-image: url("backgroundHeader.jpg");
+  background: #f6f3ff;
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 400px;
@@ -69,7 +81,7 @@ h3 {
 header h1 {
   font-size: 70px;
   line-height: 1.5;
-  margin-top: 90px;
+  margin-top: 60px;
   text-shadow: grey 0 0 3px;
 }
 
@@ -83,11 +95,13 @@ header h1 {
   position: static;
 }
 .logo {
-  font-size: 20px;
   text-align: center;
 }
 .hero-text p {
   text-align: center;
+  color: #4f25b0;
+  font-weight: bold;
+  margin-top: 10px;
 }
 .container {
   padding: 10px;
@@ -154,15 +168,12 @@ header h1 {
 .textWrap p {
   font-size: 16px;
 }
-/*
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
 .containerSkills {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  padding-top: 20px;
-  background: red;
-}*/
-.containerSkills {
+  width: 70%;
   list-style: none;
   margin: 20px auto;
   padding: 10px;
@@ -188,7 +199,7 @@ header h1 {
 .skillBar span {
   height: 20px;
   float: left;
-  background: linear-gradient(0deg, rgba(0, 0, 255, 1), rgba(0, 0, 0, 0));
+  background: #827e9c;
 }
 .html {
   width: 80%;
@@ -252,14 +263,33 @@ lable {
   margin-right: 10px;
 }
 .contactMe {
-  padding: 10px;
+  background-color: #9f86c0;
   margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px 20px;
+}
+.contactMe:hover {
+  background-color: #474646;
 }
 footer {
   text-align: center;
 }
+.social-links a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+}
+form i {
+  font-size: 28px;
+}
 small {
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 5px;
 }
 @media (max-width: 800px) {

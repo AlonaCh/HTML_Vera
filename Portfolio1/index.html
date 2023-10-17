@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Changa&family=Dosis:wght@300&family=Frank+Ruhl+Libre:wght@300&family=Lato:ital,wght@0,300;1,400&family=PT+Mono&family=Playfair+Display&family=Poppins:wght@200&family=Roboto+Condensed:wght@300&family=Tourney:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+<script
+      src="https://kit.fontawesome.com/f0d54a2468.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Welcome to my Portfolio</title>
   </head>
@@ -39,20 +43,30 @@
     </header>
     <main class="container">
       <section class="containerProjects">
-        <h3>Take a look at my projects!</h3>
+        <h1>Take a look at my projects!</h1>
         <div id="projects" class="projectCards">
           <div class="card one">
             <img src="imgProject1.jpg" alt="project" class="imgProject" />
             <div class="cardText">
               <h4>Some project</h4>
-              <p>HTML, CSS, JS</p>
+              <p>
+                <a
+          href="https://public.bc.fi/s2301193/CatchGame/"
+                target="_blank"
+              >Catch me Game
+              </a>
+              </p>
             </div>
           </div>
           <div class="card two">
             <img src="imgProject2.jpg" alt="project" class="imgProject" />
             <div class="cardText">
               <h4>Some project</h4>
-              <p>HTML, CSS, JS</p>
+              <p><a
+                href="https://public.bc.fi/s2301193/CatchGame/"
+                      target="_blank"
+                    >PokeDex
+                    </a></p>
             </div>
           </div>
           <div class="card three">
@@ -71,7 +85,8 @@
         <div class="textWrap">
           <h3 id="aboutme" class="aboutme1">About me</h3>
           <p class="me">
-            Hi, my name is Alona Chubenko! I love coding and I’m currently studying Full Stack Web Development at Business College in Helsinki and seeking new opportunities in front-end development. I’m working on my skills in HTML, CSS and JavaScript. Do not hesitate to check my projects.
+            <span class="name">Hi, my name is Alona Chubenko!</span> 
+            <br>I love coding and I’m currently studying Full Stack Web Development at Business College in Helsinki and seeking new opportunities in front-end development. I’m working on my skills in HTML, CSS and JavaScript. Do not hesitate to check my projects.
           </p>
         </div>
         </div>
@@ -91,6 +106,8 @@
         </li>
 
       </section>
+      <!--Contact form-->
+      <section class="contact">
       <form id="contact">
         <div class="form-group">
           <lable for="firstname">Your name</lable>
@@ -106,47 +123,36 @@
           <input type="email" name="email" id="email" class="emailInput" />
         </div>
         <button type="submit" class="contactMe">Contact me</button>
-
-
-
-        <div class="social-links d-flex justify-content-center">
+        <!--Social links-->
+        <div class="social-links">
           <a
-            href="https://www.github.com/patricia"
+            href="aliona.chubenko@gmail.com" title="Email me"
+            class="email-link"
+          >
+          <i class="fa-solid fa-envelope"></i>
+            <span class="email">aliona.chubenko@gmail.com</span>
+          </a>
+          
+          <a
+            href="https://github.com/AlonaCh"
             target="_blank"
             title="GitHub Profile"
           >
-            <i class="fab fa-github"></i>
+          <i class="fa-brands fa-github"></i>
           </a>
+          
           <a
-            href="https://www.instragram.com/patricia"
+            href="https://www.linkedin.com/in/alona-chubenko-66228b17b/"
             target="_blank"
-            title="instragram Profile"
+            title="linkedin Profile"
           >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a
-            href="https://www.twitter.com/patricia"
-            target="_blank"
-            title="Twitter Profile"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        
         </div>
-        <p class="text-center mt-5">
-          ✌️ This website is
-          <a
-            href="https://github.com/AlonaCh/HTML_Vera/tree/main/Portfolio1"
-            target="_blank"
-          >
-            open-sourced
-          </a>
-        </p>
-      </footer>
     </div>
-
-
-    
         <small>Copyright©️ Alona Chubenko</small>
+      </section>
       </form>
     </main>
     <footer>
