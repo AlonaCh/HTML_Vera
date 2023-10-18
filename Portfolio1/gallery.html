@@ -12,7 +12,6 @@
       src="https://kit.fontawesome.com/f0d54a2468.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
     <title>Gallery</title>
   </head>
     <style>
@@ -59,7 +58,7 @@ ul li a:hover {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-template-rows: repeat(8, 8vw);
         grid-gap: 0.7rem;
-        margin: 3rem;
+        margin: 2rem;
       }
       .imgProject {
         object-fit: cover;
@@ -111,7 +110,7 @@ ul li a:hover {
   align-items: center;
   background-color: rgb(71, 70, 70);
   color: white;
-  padding: 30px;
+  padding: 20px;
 }
 .form-group {
   display: flex;
@@ -119,7 +118,7 @@ ul li a:hover {
   justify-content: space-between;
   padding: 10px;
 }
-      .nameInput,
+.nameInput,
 .emailInput {
   display: flex;
   justify-content: center;
@@ -130,16 +129,69 @@ lable {
   margin-right: 10px;
 }
 .contactMe {
-  padding: 10px;
+  background-color: #9f86c0;
   margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+      padding: 10px 20px;
+}
+.contactMe:hover {
+  background-color: #474646;
 }
 footer {
   text-align: center;
 }
-      small {
-        margin-top: 15px;
-        margin-bottom: 5px;
-      }
+.social-links a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+}
+form i {
+  font-size: 28px;
+}
+small {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+@media (max-width: 800px) {
+  body {
+    background: #ffeedf;
+  }
+  nav ul {
+    display: none;
+  }
+  header .hero {
+    display: none;
+  }
+  .mobMenu {
+    display: block;
+  }
+  #backToTop {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .btnBack {
+    padding: 0.5rem;
+  }
+  ul.responsive {
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+  }
+  ul.responsive li {
+    display: block;
+    margin: 1rem;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -184,21 +236,57 @@ footer {
           <img src="imgProject1.jpg" alt="project" class="imgProject" />
         </div>
       </div>
+<!--Contact form-->
+      <section class="contact">
+        <form id="contact">
+          <div class="form-group">
+            <lable for="firstname">Your name</lable>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              class="nameInput"
+            />
+          </div>
+          <div class="form-group">
+            <lable for="email">Email</lable>
+            <input type="email" name="email" id="email" class="emailInput" />
+          </div>
+      
+          <div class="form-group">
+            <textarea cols="30" rows="3" placeholder="Message"></textarea>
+        </div>
+      
+          <button type="submit" class="contactMe">Send</button>
+        <!--Social links-->
+        <div class="social-links">
+          <a
+            href="aliona.chubenko@gmail.com" title="Email me"
+            class="email-link"
+          >
+          <i class="fa-solid fa-envelope"></i>
+            <span class="email">aliona.chubenko@gmail.com</span>
+          </a>
+          <a
+            href="https://github.com/AlonaCh"
+            target="_blank"
+            title="GitHub Profile"
+          >
+          <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alona-chubenko-66228b17b/"
+            target="_blank"
+            title="linkedin Profile"
+          >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        
+        </div>
     </main>
-    <footer>
-    <form id="contact">
-      <div class="form-group">
-        <lable for="firstname">Your name</lable>
-        <input type="text" name="firstname" id="firstname" class="nameInput" />
-      </div>
-      <div class="form-group">
-        <lable for="email">Email</lable>
-        <input type="email" name="email" id="email" class="emailInput" />
-      </div>
-      <button type="submit" class="contactMe">Contact me</button>
-      <small>Copyright©️ My website 2023</small>
-    </form>
-    </footer>
-  </div>
   </body>
 </html>
+
+ 
+
+  

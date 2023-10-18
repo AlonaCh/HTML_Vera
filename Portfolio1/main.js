@@ -2,7 +2,7 @@ const backButton = document.querySelector("#backToTop");
 const mobileButton = document.querySelector(".mobMenu");
 const navMenu = document.querySelector("nav ul");
 const navMenuItems = document.querySelectorAll("nav ul li a");
-const header = document.querySelectorAll("header");
+const header = document.querySelector("header");
 
 //onscroll event triger
 window.onscroll = function () {
