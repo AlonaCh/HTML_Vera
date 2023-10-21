@@ -2,11 +2,11 @@
   --header-color: #f6f3ff;
   --h-color: #434059;
   --body-color: #ffffff;
-  --hover-link-color: #4f25b0;
-  --link-color: #434059;
-  --secondary-color: #f6f3ff;
+  --hover-link-color: #885df1;
   --media-color: #ffeedf;
   --skill-span-color: #827e9c;
+  --btn-back-color: #9f86c0;
+  --footer-color: #474646;
 }
 * {
   margin: 0;
@@ -21,11 +21,11 @@ html {
 body {
   min-height: 100vh; /*height 100*/
   background-color: var(--body-color);
-  color: #434059;
+  color: var(--h-color);
   font-family: "Poppins", sans-serif;
 }
 header {
-  background: #f6f3ff;
+  background: var(--header-color);
   background-repeat: no-repeat;
   top: 0;
   background-size: 100%;
@@ -40,13 +40,14 @@ header {
   background-color: transparent;
   box-shadow: none;
   border: none;
+  cursor: pointer;
 }
 .btnBack {
   border: none;
   border-radius: 5px;
   box-shadow: none;
   padding: 0.5rem 1rem;
-  background-color: #9f86c0;
+  background-color: var(--btn-back-color);
   font-family: inherit;
   font-size: inherit;
 }
@@ -55,10 +56,16 @@ header {
   bottom: 2rem;
   right: 2rem;
   display: none;
+  cursor: pointer;
+}
+#backToTop:hover {
+  background: white;
+  color: var(--hover-link-color);
+  font-weight: bolder;
 }
 header li {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 .liContainer {
   text-align: right;
@@ -67,10 +74,10 @@ ul li a {
   text-decoration: none;
   padding: 20px;
   display: inline-block;
-  color: #434059;
+  color: var(--h-color);
 }
 ul li a:hover {
-  color: #4f25b0;
+  color: var(--hover-link-color);
   font-weight: bold;
 }
 h1,
@@ -80,10 +87,9 @@ h3 {
   font-weight: bold;
 }
 header h1 {
-  font-size: 70px;
+  font-size: 4.4rem;
   line-height: 1.5;
-  margin-top: 60px;
-  text-shadow: grey 0 0 3px;
+  margin-top: 3rem;
 }
 .h1 h1::after {
   content: "";
@@ -112,10 +118,12 @@ header h1 {
 }
 .logo {
   text-align: center;
+  font-size: 1.8rem;
 }
 .hero-text p {
+  font-size: 1.2rem;
   text-align: center;
-  color: #4f25b0;
+  color: var(--hover-link-color);
   font-weight: bold;
   margin-top: 10px;
 }
@@ -135,14 +143,13 @@ header h1 {
 }
 .card {
   display: flex;
-  width: 300px;
+  max-width: 300px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  border-color: #ffffff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   margin: 1.5rem;
-
   border: solid 0.1em lightgrey;
   color: var(--h-color);
 }
@@ -174,7 +181,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   min-height: 55vh;
-  background: #f6f3ff;
+  background: var(--header-color);
   padding: 20px;
 }
 .contentAbout {
@@ -192,7 +199,7 @@ header h1 {
   transition: 0.6s ease-in all;
 }
 .textWrap {
-  background: #f6f3ff;
+  background: var(--header-color);
 }
 .textWrap h3 {
   font-size: 40px;
@@ -216,7 +223,7 @@ header h1 {
   padding: 10px;
 }
 .skillBar {
-  background: #f2e9e4;
+  background: var(--header-color);
   display: block;
   height: 20px;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -231,7 +238,7 @@ header h1 {
 .skillBar span {
   height: 20px;
   float: left;
-  background: #827e9c;
+  background: var(--skill-span-color);
 }
 .html {
   width: 80%;
@@ -274,7 +281,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(71, 70, 70);
+  background-color: var(--footer-color);
   color: white;
   padding: 20px;
 }
@@ -295,7 +302,7 @@ lable {
   margin-right: 10px;
 }
 .contactMe {
-  background-color: #9f86c0;
+  background-color: var(--btn-back-color);
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -306,7 +313,7 @@ lable {
   padding: 10px 20px;
 }
 .contactMe:hover {
-  background-color: #474646;
+  background-color: var(--footer-color);
 }
 footer {
   text-align: center;
@@ -324,9 +331,9 @@ small {
   margin-top: 25px;
   margin-bottom: 5px;
 }
-@media (max-width: 800px) {
+@media (max-width: 650px) {
   body {
-    background: #ffeedf;
+    background: var(--media-color);
   }
   nav ul {
     display: none;
@@ -356,17 +363,10 @@ small {
     display: block;
     margin: 1rem;
   }
+  form i {
+    font-size: 1rem;
+  }
+  .projectCards {
+    align-items: stretch;
+  }
 }
-/*
-@media (max-width: 667px) {
-  body {
-    background: black;
-  }
-  #backToTop {
-    bottom: 1rem;
-    right: 1rem;
-  }
-  .btnBack {
-    padding: 0.5rem;
-  }
-} */
