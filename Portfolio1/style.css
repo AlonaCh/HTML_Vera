@@ -1,4 +1,9 @@
 :root {
+  --main-color: radial-gradient(
+    879px at 10.4% 22.3%,
+    rgb(255, 235, 238) 0%,
+    rgb(186, 190, 245) 93.6%
+  );
   --header-color: #f6f3ff;
   --h-color: #434059;
   --body-color: #ffffff;
@@ -25,7 +30,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 header {
-  background: var(--header-color);
+  background: var(--main-color);
   background-repeat: no-repeat;
   top: 0;
   background-size: 100%;
@@ -62,6 +67,19 @@ header {
   background: white;
   color: var(--hover-link-color);
   font-weight: bolder;
+}
+.group {
+  display: flex;
+  justify-content: space-between;
+}
+.group p {
+  font-size: 1.1rem;
+  color: var(--h-color);
+  padding: 20px;
+}
+.group p:hover {
+  color: var(--hover-link-color);
+  font-weight: bold;
 }
 header li {
   display: inline-block;
@@ -196,6 +214,17 @@ header h1 {
 }
 #image1:hover {
   transform: scale(1.1);
+  transition: 0.6s ease-in all;
+}
+.me {
+  line-height: 150%;
+  margin-top: 8px;
+}
+.textWrap i {
+  font-size: 27px;
+}
+.textWrap i:hover {
+  transform: scale(1.3);
   transition: 0.6s ease-in all;
 }
 .textWrap {
