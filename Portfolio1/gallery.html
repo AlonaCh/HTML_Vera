@@ -31,6 +31,13 @@
         color: #434059;
   font-family: "Poppins", sans-serif;
       }
+      .mobMenu {
+  display: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
 header li {
   display: inline-block;
   font-size: 18px;
@@ -70,32 +77,26 @@ ul li a:hover {
         grid-column: 1 / span 4;
       }
       .second {
-        background: orange;
         grid-row: 1 / span 2;
         grid-column: 5 / span 1;
       }
       .third {
-        background: green;
         grid-row: 3 / span 4;
         grid-column: 1 / span 1;
       }
       .fifth {
-        background: lightgreen;
         grid-row: 3 / span 2;
         grid-column: 5 / span 1;
       }
       .sixth {
-        background: yellow;
         grid-row: 3 / span 4;
         grid-column: 2 / span 3;
       }
       .seventh {
-        background: purple;
         grid-row: 5 / span 2;
         grid-column: 5 / span 1;
       }
       .eighth {
-        background: burlywood;
         grid-column: 1 / span 3;
         grid-row: 7 / span 2;
       }
@@ -168,6 +169,15 @@ small {
   header .hero {
     display: none;
   }
+  .grid-container {
+    align-items: stretch;
+  }
+  header {
+    right: 0;
+    left: auto;
+    width: 80%;
+    padding: 1rem 1rem 3rem;
+  }
   .mobMenu {
     display: block;
   }
@@ -196,7 +206,11 @@ small {
   </head>
   <body>
     <header class="heading">
+      <!--Nav menu-->
       <nav>
+        <button class="mobMenu">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
         <ul class="liContainer">
           <li class="menu"><a href="index.html">Home</a></li>
           <li class="menu"><a href="index.html">About me</a></li>
