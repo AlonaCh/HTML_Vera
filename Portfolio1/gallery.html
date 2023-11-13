@@ -13,7 +13,6 @@
       crossorigin="anonymous"
     ></script>
     <title>Gallery</title>
-  </head>
     <style>
       * {
         margin: 0;
@@ -21,23 +20,16 @@
         box-sizing: border-box;
         -webkit-font-smoothing: antialiased;
         -moz-osx-smoothing: grayscale;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        min-height: 100vh;
-        overflow-x: hidden;
-        color: #434059;
+  }
+html {
+  scroll-behavior: smooth;
+  }
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #434059;
   font-family: "Poppins", sans-serif;
-      }
-      .mobMenu {
-  display: none;
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
-  cursor: pointer;
-}
+  }
 header li {
   display: inline-block;
   font-size: 18px;
@@ -52,7 +44,6 @@ ul li a:hover {
   color: #4f25b0;
   font-weight: bold;
 }
-
 .grid-container > div {
   display: flex;
   justify-content: center;
@@ -163,20 +154,11 @@ small {
   body {
     background: #ffeedf;
   }
-  nav ul {
-    display: none;
+  .container {
+    margin-top: 1.2rem;
   }
   .grid-container {
     align-items: stretch;
-  }
-  header {
-    right: 0;
-    left: auto;
-    width: 80%;
-    padding: 1rem 1rem 3rem;
-  }
-  .mobMenu {
-    display: block;
   }
   #backToTop {
     bottom: 1rem;
@@ -185,34 +167,22 @@ small {
   .btnBack {
     padding: 0.5rem;
   }
-  ul.responsive {
-    display: block;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: 70px;
-    width: 100%;
-  }
-  ul.responsive li {
-    display: block;
-    margin: 1rem;
-  }
-}
 
+}
     </style>
   </head>
   <body>
     <header class="heading">
       <!--Nav menu-->
       <nav>
-        <button class="mobMenu">
-          <span class="material-symbols-outlined"> menu </span>
-        </button>
+        <div class="group">
         <ul class="liContainer">
           <li class="menu"><a href="index.html">Home</a></li>
           <li class="menu"><a href="#contact">Contact me</a></li>
         </ul>
+      </div>
       </nav>
+      
     </header>
     <main>
       <div class="container">
@@ -290,8 +260,10 @@ small {
         </a>
         
         </div>
+        </form>
+      </div>
+      </section>
     </main>
-    <script src="main.js"></script>
   </body>
 </html>
 
